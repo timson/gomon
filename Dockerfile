@@ -8,6 +8,7 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
+COPY plugins ./plugins
 
 RUN go build -o /gomon
 
